@@ -1,24 +1,150 @@
-# README
+<!-- TABLE OF CONTENTS -->
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 📗 Index
 
-Things you may want to cover:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Deployment](#deployment)
+- [👥 Author](#author)
+- [🔭 Features](#features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-* Ruby version
+<!-- PROJECT DESCRIPTION -->
 
-* System dependencies
+# 📖 [Blog-App] `[Ruby on Rails]` <a name="about-project"></a>
 
-* Configuration
 
-* Database creation
+This is a Ruby On Rails app where I started to learn about the migration methods using the MVC design pattern
 
-* Database initialization
+## 🛠 Built With <a name="built-with"></a>
 
-* How to run the test suite
+### Tech Stack <a name="tech-stack"></a>
 
-* Services (job queues, cache servers, search engines, etc.)
+<details>
+    <summary>Client</summary>
+    <ul>
+      <li><a href="https://www.ruby-lang.org/es/">Ruby</a></li>
+      <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+    </ul>
+  </details>
 
-* Deployment instructions
+<details>
+<summary>Database</summary>
+  <ul>
+   <li><a href="https://www.postgresql.org/">Data Storaged with PostgreSQL manager</a></li>
+  </ul>
+</details>
 
-* ...
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+  - **[Migration of Database using Rails method]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Preview <a name="live-demo"></a>
+
+Will be implemented in the future
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+```sh
+ To have a computer, Internet, Keyboard, and Mouse, also you need to have Ruby, Ruby on Rails and a SQL database manager settle up on your system
+```
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+    Run bundle installs to install all the gems and dependencies.
+```
+
+### Install
+
+```sh
+  Installation is not necessary
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+executing the command `rails s` will start the server of this RoR app.
+```
+
+### Deployment
+
+This is only the Back-End part of the project, so It doesn't need any deploy
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHOR -->
+
+## 👥 Authors <a name="author"></a>
+
+👤 Daniel Falcon - [Github](https://github.com/Danfall369) | [Linkedin](https://www.linkedin.com/in/danfall369/)
+
+<!-- FEATURES -->
+
+## 🔭 Features <a name="features"></a>
+
+- [ ] **[User interface]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the <a href="https://github.com/Danfall369/Blog-app/issues">Issue Page</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, give it a star and be pending on our profiles since we'll be doing much more! 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+Also, we would like to thanks our Microverse Team and my partners for helping us to get this done.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
