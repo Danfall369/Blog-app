@@ -42,7 +42,7 @@ This is a Ruby On Rails app where I started to learn about the migration methods
 <details>
 <summary>Database</summary>
   <ul>
-   <li><a href="https://www.postgresql.org/">Data Storaged In Json Files</a></li>
+   <li><a href="https://www.postgresql.org/">Data Storaged with PostgreSQL manager</a></li>
   </ul>
 </details>
 
