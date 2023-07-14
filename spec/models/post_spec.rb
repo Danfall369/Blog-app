@@ -28,8 +28,8 @@ RSpec.describe Post, type: :model do
   describe '#increment_post_count' do
     it 'increments the post_counter of the associated user' do
       user = User.create(name: 'Tom Hardy', posts_counter: 10)
-      post = Post.create(author_id: user.id, title: 'First Testing Post', text: 'I expect to be success', comments_counter: 5,
-                         likes_counter: 5)
+      post = Post.create(author_id: user.id, title: 'First Testing Post', text: 'I expect to be success',
+                         comments_counter: 5, likes_counter: 5)
 
       expect { post.increment_post_count }.to change { user.reload.posts_counter }.by(1)
     end
@@ -38,8 +38,8 @@ RSpec.describe Post, type: :model do
   describe '#decrement_post_count' do
     it 'decrements the post_counter of the associated user' do
       user = User.create(name: 'Tom Hardy', posts_counter: 10)
-      post = Post.create(author_id: user.id, title: 'First Testing Post', text: 'I expect to be success', comments_counter: 5,
-                         likes_counter: 5)
+      post = Post.create(author_id: user.id, title: 'First Testing Post', text: 'I expect to be success',
+                         comments_counter: 5, likes_counter: 5)
 
       expect { post.decrement_post_count }.to change { user.reload.posts_counter }.by(-1)
     end
@@ -51,8 +51,8 @@ RSpec.describe Post, type: :model do
       user = User.create(name: 'Tom Hardy', posts_counter: 0)
 
       # Create a post
-      post = Post.create(author_id: user.id, title: 'First Testing Post', text: 'I expect to be success', comments_counter: 5,
-                         likes_counter: 5)
+      post = Post.create(author_id: user.id, title: 'First Testing Post', text: 'I expect to be success',
+                         comments_counter: 5, likes_counter: 5)
 
       # Create test comments for the post
       Comment.create(post_id: post.id, author_id: user.id, text: 'Hi Tom!')
