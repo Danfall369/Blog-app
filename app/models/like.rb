@@ -4,6 +4,7 @@ class Like < ApplicationRecord
 
   after_create :increment_likes_count
   after_destroy :decrement_likes_count
+  after_save :increment_likes_count, :decrement_likes_count
 
   def increment_likes_count
     puts 'Increment Likes Count'
