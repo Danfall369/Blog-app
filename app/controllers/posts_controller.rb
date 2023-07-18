@@ -4,6 +4,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    @posts = params[:id]
+    @post = params[:id]
   end
 end
