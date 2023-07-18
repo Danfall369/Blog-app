@@ -9,7 +9,6 @@ class Post < ApplicationRecord
 
   after_create :increment_post_count
   after_destroy :decrement_post_count
-  after_save :increment_post_count, :decrement_post_count
 
   def increment_post_count
     puts 'Increment Post Count'

@@ -4,7 +4,6 @@ class Comment < ApplicationRecord
 
   after_create :increment_comment_count
   after_destroy :decrement_comment_count
-  after_save :increment_comment_count, :decrement_comment_count
 
   def increment_comment_count
     puts 'Increment Comment Count'
