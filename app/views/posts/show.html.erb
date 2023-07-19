@@ -1,1 +1,11 @@
-<h1>Here is a single post for a user</h1>
+<html>
+  <head>
+    <%= stylesheet_link_tag 'one_post' %>
+  </head>
+
+  <body>
+    <%= render 'post_card' %>
+
+    <%= render_comments_section(@post) %>
+  </body>
+</html>

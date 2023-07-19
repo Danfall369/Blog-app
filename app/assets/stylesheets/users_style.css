@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.user-box {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.photo {
+  width: 20%;
+  border: 3px solid black;
+}
+
+.user-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 25%;
+  border: 3px solid black;
+}
+
+.user-posts-counter {
+  padding-top: 5rem;
+}
+
+.custom-link {
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.custom-link:hover {
+  color: blue;
+}

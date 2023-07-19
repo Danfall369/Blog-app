@@ -1,1 +1,22 @@
-<h1>Here is a details of a given user</h1>
+<!-- app/views/users/show.html.erb -->
+<html>
+  <head>
+    <%= stylesheet_link_tag 'single_user' %>
+  </head>
+
+  <body>
+    <%= render 'shared/user_card', user: @user %>
+
+    <div class="user-bio">
+      <h2>Bio</h2>
+      <p><%= @user.bio %></p>
+    </div>
+
+    <%= render partial: 'shared/posts_card', locals: { posts: @user.posts } %>
+
+    <div>
+      <button class="btn btn-primary">see more</button>
+    </div>
+
+  </body>
+</html>
