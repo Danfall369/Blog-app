@@ -1,0 +1,8 @@
+<div class="users-container">
+  <% @users.each do |user| %>
+    <div class="user-box">
+      <img src="<%= user.photo %>" alt="userPhoto" class="photo">
+      <%= user_details_for(user) %>
+    </div>
+  <% end %>
+</div>

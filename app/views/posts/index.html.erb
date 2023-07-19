@@ -1,1 +1,15 @@
-<h1>Here is a list of posts for a given user</h1>
+<%  PostsHelper %>
+
+<!-- app/views/posts/index.html.erb -->
+<html>
+  <head>
+    <%= stylesheet_link_tag 'posts_style' %>
+  </head>
+  <body>
+    <%= render 'shared/user_card', user: @user %>
+
+    <%= render 'posts_display' %>
+
+    <button class="btn btn-primary">pagination</button>
+  </body>
+</html>
