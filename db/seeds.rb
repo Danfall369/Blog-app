@@ -1,7 +1,19 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+# db/seeds.rb
+
+# Create users
+first_user = User.create(name: 'Tom', photo: 'https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg?w=740&t=st=1689738009~exp=1689738609~hmac=5757be4c36da7b17920e83acece1487622aeb3b074b1cd30ca510073909f40db', bio: 'Teacher from Mexico.', posts_counter: 0)
+second_user = User.create(name: 'Lilly', photo: 'https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=740&t=st=1689738007~exp=1689738607~hmac=8b20e5cdb0ee3ec7d948332a9279376fcb01f6eb493d6272b807390e7df83fbb', bio: 'Teacher from Poland.', posts_counter: 0)
+
+# Create posts for the first user
+first_post = Post.create(author_id: first_user.id, title: 'Hello', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
+second_post = Post.create(author_id: first_user.id, title: 'Hello', text: 'This is my second post', comments_counter: 0, likes_counter: 0)
+third_post = Post.create(author_id: first_user.id, title: 'Hello', text: 'This is my third post', comments_counter: 0, likes_counter: 0)
+fourth_post = Post.create(author_id: first_user.id, title: 'Hello', text: 'This is my fourth post', comments_counter: 0, likes_counter: 0)
+
+# Create comments for the fourth post
+Comment.create(post_id: fourth_post.id, author_id: second_user.id, text: 'Hi Tom!')
+Comment.create(post_id: fourth_post.id, author_id: second_user.id, text: 'This is my second comment')
+Comment.create(post_id: fourth_post.id, author_id: second_user.id, text: 'This is my third comment')
+Comment.create(post_id: fourth_post.id, author_id: second_user.id, text: 'This is my fourth comment')
+Comment.create(post_id: fourth_post.id, author_id: second_user.id, text: 'This is my fifth comment')
+Comment.create(post_id: fourth_post.id, author_id: second_user.id, text: 'This is my sixth comment')
