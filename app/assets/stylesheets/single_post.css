@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .post {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0; /* Remove the top margin */
+  margin: 20px 0;
   padding: 2%;
   border: 1px solid black;
   border-radius: 4px;
@@ -36,6 +37,7 @@
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 90%;
+  background-color: #fff;
 }
 
 .text-author {
@@ -46,4 +48,24 @@
 
 .by-author {
   margin-left: 1%;
+}
+
+/* Media query for screen widths up to 375px */
+@media screen and (max-width: 375px) {
+  .post,
+  .ul-comments-box {
+    width: 100%;
+  }
+
+  .users-posts {
+    align-items: stretch;
+  }
+
+  .text {
+    justify-content: flex-start;
+
+    .comment-text {
+      margin-right: 0;
+    }
+  }
 }
