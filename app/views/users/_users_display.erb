@@ -1,11 +1,8 @@
 <div class="users-container">
-    <% @users.each do |user| %>
-        <div class="user-box">
-            <img src="<%= user.photo %>" alt="userPhoto" class="photo">
-            <div class="user-details">
-                <h2 class="user-name"><%= link_to user.name, user_path(user), class: 'custom-link' %></h2>
-                <p class="user-posts-counter">Number of posts: <%= user.posts_counter %></p>
-            </div>
-        </div>
-    <% end %>
+  <% @users.each do |user| %>
+    <div class="user-box">
+      <img src="<%= user.photo %>" alt="userPhoto" class="photo">
+      <%= user_details_for(user) %>
+    </div>
+  <% end %>
 </div>
