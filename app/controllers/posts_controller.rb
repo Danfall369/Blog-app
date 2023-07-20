@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @user = User.find(params[:user_id])
+    @user = current_user
     @posts = Post.all
     @comments = Comment.all
   end
