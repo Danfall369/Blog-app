@@ -1,0 +1,7 @@
+<h1>New Comentario</h1>
+<%= form_with(model: [@post, @comment], url: user_post_path(current_user, @post)) do |form| %>
+  <%= form.label :content %>
+  <%= form.text_area :text %>
+
+  <%= form.submit "Create Comentario" %>
+<% end %>
