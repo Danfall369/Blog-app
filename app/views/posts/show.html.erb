@@ -7,5 +7,7 @@
     <%= render 'post_card' %>
 
     <%= render_comments_section(@post) %>
+
+    <%=link_to 'New Comment', new_comment_path, class: 'btn btn-primary' %>
   </body>
 </html>
