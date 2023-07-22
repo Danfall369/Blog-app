@@ -48,7 +48,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 95%;
   background-color: #fff;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .text {
@@ -94,7 +94,7 @@
 .ul-comments-box {
   display: flex;
   flex-direction: column;
-  margin: 0, auto;
+  margin: 0 auto;
   padding: 2%;
   border: 1px solid #ccc;
   border-radius: 5px;
