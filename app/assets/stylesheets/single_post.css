@@ -20,8 +20,9 @@
 .text {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   margin-right: 2%;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .comment-text {
