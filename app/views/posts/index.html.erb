@@ -7,7 +7,9 @@
   </head>
   <body>
     <%= render 'shared/user_card', user: @user %>
-
+    
+    <%= notice %>
+    <%= alert %>
     <%= render 'posts_display' %>
 
     <%=link_to 'New Post', new_user_post_path, class: 'btn btn-primary' %>

@@ -12,9 +12,9 @@ class CommentsController < ApplicationController
     @comment.user = current_user
 
     if @comment.save
-      redirect_to user_post_path(@user, @post), notice: 'Comentario creado exitosamente.'
+      redirect_to user_post_path(@user, @post), notice: 'Comment save successfully.'
     else
-      render :new
+      render :new, alert: 'Error: Comment could not be saved'
     end
   end
 
