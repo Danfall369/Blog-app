@@ -41,14 +41,14 @@
   width: 100%;
 }
 
-.post {
-  margin-top: 20px;
+.user-post {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 90%;
+  width: 95%;
   background-color: #fff;
+  margin: 0 auto;
 }
 
 .text {
@@ -94,13 +94,14 @@
 .ul-comments-box {
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
+  margin: 0 auto;
   padding: 2%;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 90%;
   background-color: #f9f9f9;
+  margin-bottom: 3rem;
 }
 
 .text-author {

@@ -2,6 +2,8 @@ class Comment < ApplicationRecord
   belongs_to :user, foreign_key: 'author_id'
   belongs_to :post, foreign_key: 'post_id'
 
+  validates :text, presence: true
+
   after_create :increment_comment_count
   after_destroy :decrement_comment_count
 
