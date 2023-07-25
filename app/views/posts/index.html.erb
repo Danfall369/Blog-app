@@ -12,8 +12,9 @@
     <%= alert %>
     <%= render 'posts_display' %>
 
-    <%=link_to 'New Post', new_user_post_path, class: 'btn btn-primary' %>
-
-    <button class="btn btn-primary">pagination</button>
+    <div class='buttons'>
+      <%=button_to 'New Post', new_user_post_path, method: :get, class: 'btn btn-primary' %>
+      <button class="btn btn-primary">pagination</button>
+    </div>
   </body>
 </html>

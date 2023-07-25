@@ -1,7 +1,7 @@
 <div class="user-posts">
     <% @user.recent_posts.each do |post| %>
         <div class="user-post">
-            <h3><%= link_to post.title, user_posts_path(user_id: post.author_id), class: 'custom-link-s' %></h3>
+            <h3><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id), class: 'custom-link-s' %></h3>
             <p><%= post.text %></p>
             <p class="comments-likes">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
         </div>  

@@ -1,4 +1,3 @@
-<!-- app/views/users/show.html.erb -->
 <html>
   <head>
     <%= stylesheet_link_tag 'single_user' %>
@@ -14,8 +13,8 @@
 
     <%= render partial: 'shared/posts_card', locals: { posts: @user.posts } %>
 
-    <div>
-      <button class="btn btn-primary">see more</button>
+    <div class='buttons'>
+      <%= button_to "View All Posts", user_posts_path(user_id: @user.id), method: :get, class: "btn btn-primary" %>
     </div>
 
   </body>

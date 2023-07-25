@@ -48,7 +48,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 95%;
   background-color: #fff;
-  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 .text {
@@ -57,6 +57,13 @@
 }
 
 /* Buttons and links */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -102,6 +109,7 @@
   width: 90%;
   background-color: #f9f9f9;
   margin-bottom: 3rem;
+  list-style: none;
 }
 
 .text-author {

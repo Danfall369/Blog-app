@@ -11,16 +11,18 @@ module PostsHelper
   end
 
   def render_comments_section(post)
-    content_tag(:ul, class: 'ul-comments-box') do
-      concat content_tag(:h4, 'Comments:', class: 'section-comments')
-
-      if post.comments.blank?
-        concat content_tag(:li, 'no comments for the moment')
-      else
-        post.recent_comments.each do |comment|
-          concat content_tag(:li, "Username: #{comment.text.blank? ? 'no comments for the moment' : comment.text}")
+    content_tag(:div, class: 'comments-section') do
+      content_tag(:h4, 'Comments:', class: 'section-comments') +
+        if post.comments.blank?
+          content_tag(:p, 'no comments for the moment', class: 'ul-comments-box' )
+        else
+          content_tag(:ul, class: 'ul-comments-box') do
+            post.comments.each do |comment| # Loop through each comment associated with the post
+              user_name = comment.user ? comment.user.name : 'Anonymous' # Get the name of the user who made the comment
+              concat content_tag(:li, "#{user_name}: #{comment.text}")
+            end
+          end
         end
-      end
     end
-  end
+  end  
 end
