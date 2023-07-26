@@ -6,10 +6,19 @@
   <body>
     <%= render 'post_card' %>
 
-    <%= notice %>
-    <%= alert %>
+    <div class='notice'>
+      <%= notice %>
+    </div>
+
+    <div class='alert'>
+      <%= alert %>
+    </div>
+
     <%= render_comments_section(@post) %>
 
-    <%=link_to 'New Comment', new_comment_path, class: 'btn btn-primary' %>
+    <div class='buttons'>
+      <%= button_to 'New Comment', new_comment_path, method: :get, class: 'btn btn-primary' %>
+    </div>
+    
   </body>
 </html>

@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: Blog_app_development
-  username: postgres
+  username: danfall
   password: 42081
 
   # The specified database role being used to connect to postgres.
@@ -60,7 +60,7 @@ development:
 test:
   <<: *default
   database: Blog_app_test
-  username: postgres
+  username: danfall
   password: 42081
 
 # As with config/credentials.yml, you never want to store sensitive information,

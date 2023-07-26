@@ -1,21 +1,26 @@
-<!-- app/views/users/show.html.erb -->
 <html>
   <head>
     <%= stylesheet_link_tag 'single_user' %>
   </head>
 
   <body>
-    <%= render 'shared/user_card', user: @user %>
+    <% if @user %>
+      <%= render 'shared/user_card', user: @user %>
 
-    <div class="user-bio">
-      <h2>Bio</h2>
-      <p><%= @user.bio %></p>
-    </div>
+      <div class="user-bio">
+        <h2>Bio</h2>
+        <p><%= h(@user.bio) %></p>
+      </div>
+    <% else %>
+      <p>User not found.</p>
+    <% end %>
+
+    <hr>
 
     <%= render partial: 'shared/posts_card', locals: { posts: @user.posts } %>
 
-    <div>
-      <button class="btn btn-primary">see more</button>
+    <div class='buttons'>
+      <%= button_to "View All Posts", user_posts_path(user_id: @user.id), method: :get, class: "btn btn-primary" %>
     </div>
 
   </body>
