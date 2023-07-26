@@ -46,7 +46,7 @@ RSpec.describe 'User Show Page', type: :feature do
     click_link post.title
     expect(current_path).to eq(user_post_path(user_id: @user.id, id: post.id))
   end
-  
+
   it 'redirects to the user\'s post index page when clicking "View All Posts"' do
     posts = [
       Post.create(title: 'Post 1', text: 'Content 1', author_id: @user.id),

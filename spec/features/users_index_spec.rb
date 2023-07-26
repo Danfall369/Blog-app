@@ -26,7 +26,7 @@ RSpec.describe 'User index page', type: :feature do
       expect(page).to have_content("Number of posts: #{user.posts_counter}")
     end
   end
-  
+
   it 'redirects to the user show page when clicking on a user' do
     @users.each do |user|
       click_link user.name

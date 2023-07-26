@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
-/* CSS reset */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
 .user-box {
   display: flex;
   align-items: center;
