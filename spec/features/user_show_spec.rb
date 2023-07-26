@@ -7,7 +7,7 @@ RSpec.describe 'User Show Page', type: :feature do
       photo: 'path/to/user_profile_picture.jpg',
       bio: 'A short bio for John Doe'
     )
-    
+
     visit user_path(@user)
   end
 
@@ -22,7 +22,7 @@ RSpec.describe 'User Show Page', type: :feature do
   it 'displays the number of posts the user has written' do
     @user.update(posts_counter: 10)
     visit user_path(@user)
-    expect(page).to have_content("Number of posts: 10")
+    expect(page).to have_content('Number of posts: 10')
   end
 
   it 'displays the user bio' do

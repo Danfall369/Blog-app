@@ -14,7 +14,7 @@ module PostsHelper
     content_tag(:div, class: 'comments-section') do
       content_tag(:h4, 'Comments:', class: 'section-comments') +
         if post.comments.blank?
-          content_tag(:p, 'no comments for the moment', class: 'ul-comments-box' )
+          content_tag(:p, 'no comments for the moment', class: 'ul-comments-box')
         else
           content_tag(:ul, class: 'ul-comments-box') do
             post.comments.each do |comment| # Loop through each comment associated with the post
@@ -24,5 +24,5 @@ module PostsHelper
           end
         end
     end
-  end  
+  end
 end

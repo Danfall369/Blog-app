@@ -38,5 +38,5 @@ RSpec.describe 'User index page', type: :feature do
       expect(page).to have_css("img[src*='#{user.photo}'][alt='userPhoto']")
       visit users_path
     end
-  end  
+  end
 end
