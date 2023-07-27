@@ -9,13 +9,10 @@
       <%= notice %>
     </div>
 
-    <div class='alert'>
-      <%= alert %>
-    </div>
-
     <%= render 'posts_display' %>
 
     <div class='buttons'>
+      <%= button_to "Go Back", user_path(@user), method: :get, class: "btn btn-primary" %>
       <%= button_to 'New Post', new_user_post_path, method: :get, class: 'btn btn-primary' %>
     </div>
   </body>

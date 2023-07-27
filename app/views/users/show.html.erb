@@ -20,6 +20,7 @@
     <%= render partial: 'shared/posts_card', locals: { posts: @user.posts } %>
 
     <div class='buttons'>
+      <%= button_to "Go Back", users_path, method: :get, class: "btn btn-primary" %>
       <%= button_to "View All Posts", user_posts_path(user_id: @user.id), method: :get, class: "btn btn-primary" %>
     </div>
 

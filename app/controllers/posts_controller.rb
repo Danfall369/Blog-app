@@ -2,20 +2,12 @@ class PostsController < ApplicationController
   helper_method :current_user
 
   def index
-    @user = current_user
-    @posts = Post.includes(:user, comments: :user).all
+    @user = User.find(params[:user_id])
+    @posts = @user.posts.includes(:user, comments: :user)
   end
 
   def show
     @post = Post.find(params[:id])
-  end
-
-  def current_user
-    @current_user ||= User.first
-  end
-
-  def new
-    @post = Post.new
   end
 
   def create
