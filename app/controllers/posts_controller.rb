@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-  helper_method :current_user
 
   def index
     @user = User.find(params[:user_id])
