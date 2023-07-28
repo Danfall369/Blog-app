@@ -579,7 +579,7 @@ body {
 }
 
 /* Styling for the notice section */
-.Notice {
+.notice {
   padding: 15px;
   margin-bottom: 20px;
   text-align: center;
@@ -741,7 +741,7 @@ body {
 }
 
 /* Styling for the alert section */
-.Alert {
+.alert {
   padding: 15px;
   margin-bottom: 20px;
   text-align: center;
