@@ -1,13 +1,13 @@
-<!-- app/views/comments/new.html.erb -->
-
-<div class="comment-form">
-  <h1 class="form-title">New Comment</h1>
+<div class="New-comment-form">
+  <h1>New Comment</h1>
   <%= form_with(model: [current_user, Comment.new], url: create_comment_path(current_user), local: true) do |form| %>
-    <div class="form-group">
-      <%= form.label :text, class: "form-label" %>
-      <%= form.text_area :text, rows: 4, class: "form-control" %>
+    <div class="Form-field">
+      <%= form.label :text %>
+      <%= form.text_area :text, rows: 4, class: "Form-textarea" %>
     </div>
 
-    <%= form.submit 'Add Comment', class: "btn btn-primary" %>
+    <%= form.submit 'Add Comment', class: "Submit-button" %>
   <% end %>
 </div>
+
+<%= button_to "Go Back", user_post_path(current_user), method: :get, class: "Go-back-button" %>

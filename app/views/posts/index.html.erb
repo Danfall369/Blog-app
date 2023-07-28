@@ -1,19 +1,16 @@
 <html>
-  <head>
-    <%= stylesheet_link_tag 'posts_style' %>
-  </head>
-  <body>
+<head>
+</head>
+<body>
+  <div class="Post-container">
     <%= render 'shared/user_card', user: @user %>
-    
-    <div class='notice'>
-      <%= notice %>
-    </div>
 
     <%= render 'posts_display' %>
 
-    <div class='buttons'>
-      <%= button_to "Go Back", user_path(@user), method: :get, class: "btn btn-primary" %>
-      <%= button_to 'New Post', new_user_post_path, method: :get, class: 'btn btn-primary' %>
+    <div class="User-actions">
+      <%= button_to "Go Back", user_path(@user), method: :get, class: "Go-back-button" %>
+      <%= button_to 'New Post', new_user_post_path, method: :get, class: "Submit-button" %>
     </div>
-  </body>
+  </div>
+</body>
 </html>

@@ -1,10 +1,10 @@
-<div class="users-container">
+<div class="User-profile">
   <% if @user %>
-    <div class="user-box">
-      <img src="<%= @user.photo %>" alt="userPhoto" class="photo">
-      <div class="user-details">
-        <h2 class="user-name"><%= @user.name %></h2>
-        <p class="user-posts-counter">Number of posts: <%= @user.posts_counter %></p>
+    <div class="User-info">
+      <img src="<%= @user.photo %>" alt="userPhoto">
+      <div>
+        <h2><%= @user.name %></h2>
+        <p>Number of posts: <%= @user.posts_counter %></p>
       </div>
     </div>
   <% else %>
