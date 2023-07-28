@@ -66,6 +66,7 @@ body {
 }
 
 .Log-in-form input[type="submit"] {
+  width: 100%;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -73,13 +74,6 @@ body {
   border-radius: 3px;
   cursor: pointer;
 }
-
-/* Styling for the links section (if you want) */
-
-/* .Log-in-form .links {
-  text-align: center;
-  margin-top: 20px;
-} */
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {
@@ -138,6 +132,7 @@ body {
 }
 
 .Edit-user-form input[type="submit"] {
+  width: 100%;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -203,6 +198,7 @@ body {
 }
 
 .Sing-up-form input[type="submit"] {
+  width: 100%;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -266,6 +262,7 @@ body {
 }
 
 .Password-form input[type="submit"] {
+  width: 100%;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -329,6 +326,7 @@ body {
 }
 
 .Confirmatios-form input[type="submit"] {
+  width: 100%;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -348,6 +346,22 @@ body {
   .Confirmatios-form input[type="submit"] {
     width: 100%;
   }
+}
+
+/*  Links */
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link,
+.link:visited,
+.link:active {
+  color: #555;
+  text-decoration: none;
 }
 
 /* User-list */
