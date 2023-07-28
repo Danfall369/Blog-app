@@ -1,10 +1,10 @@
-<div class="user-posts">
+<div class="Recent-posts">
   <% if @user.recent_posts.any? %>
     <% @user.recent_posts.each do |post| %>
-      <div class="user-post">
-        <h3><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id), class: 'custom-link-s' %></h3>
+      <div class="Post-item">
+        <h3><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id) %></h3>
         <p><%= h(post.text) %></p>
-        <p class="comments-likes">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
+        <p>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
       </div>  
     <% end %>
   <% else %>

@@ -1,13 +1,13 @@
 <html>
-  <head>
-    <%= stylesheet_link_tag 'single_user' %>
-  </head>
+<head>
+</head>
 
-  <body>
+<body>
+  <div class="User-profile">
     <% if @user %>
       <%= render 'shared/user_card', user: @user %>
 
-      <div class="user-bio">
+      <div class="User-bio">
         <h2>Bio</h2>
         <p><%= h(@user.bio) %></p>
       </div>
@@ -19,10 +19,10 @@
 
     <%= render partial: 'shared/posts_card', locals: { posts: @user.posts } %>
 
-    <div class='buttons'>
-      <%= button_to "Go Back", users_path, method: :get, class: "btn btn-primary" %>
-      <%= button_to "View All Posts", user_posts_path(user_id: @user.id), method: :get, class: "btn btn-primary" %>
+    <div class="User-actions">
+      <%= button_to "Go Back", users_path, method: :get, class: "Go-back-button" %>
+      <%= button_to "View All Posts", user_posts_path(user_id: @user.id), method: :get, class: "Submit-button" %>
     </div>
-
-  </body>
+  </div>
+</body>
 </html>

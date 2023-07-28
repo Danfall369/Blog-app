@@ -1,7 +1,7 @@
-<div class="users-container">
+<div class="Users-list">
   <% @users.each do |user| %>
-    <div class="user-box">
-      <img src="<%= user.photo %>" alt="userPhoto" class="photo">
+    <div class="User-item">
+      <img src="<%= user.photo %>" alt="userPhoto" >
       <%= user_details_for(user) %>
     </div>
   <% end %>

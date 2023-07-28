@@ -1,10 +1,10 @@
-<div class="users-posts">
-    <div class="post">
-      <%= render_text_section(@post) %>
-        <div class="text-author">
-            <p>Title: <%= @post.title %></p> 
-            <p class="by-author"> by: <%= @post.user.name %></p>
-        </div>
-        <p>Text: <%= @post.text %></p>
+<div class="Post-section">
+  <div class="Post-details">
+    <%= render_text_section(@post) %>
+    <div class="Post-info">
+      <p>Title: <%= @post.title %></p>
+      <p>by: <%= @post.user.name %></p>
     </div>
+    <p class="Post-text">Text: <%= @post.text %></p>
+  </div>
 </div>

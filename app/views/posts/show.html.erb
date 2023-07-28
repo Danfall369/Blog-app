@@ -1,24 +1,25 @@
 <html>
-  <head>
-    <%= stylesheet_link_tag 'single_post' %>
-  </head>
+<head>
+</head>
 
-  <body>
+<body>
+  <div class="Page-container">
     <%= render 'post_card' %>
 
-    <div class='notice'>
+    <div class="Notice">
       <%= notice %>
     </div>
 
-    <div class='alert'>
+    <div class="Alert">
       <%= alert %>
     </div>
 
     <%= render_comments_section(@post) %>
 
-    <div class='buttons'>
-      <%= button_to 'New Comment', new_comment_path, method: :get, class: 'btn btn-primary' %>
+    <div class="User-actions">
+      <%= button_to "Go Back", user_posts_path(current_user), method: :get, class: "Go-back-button" %>
+      <%= button_to 'New Comment', new_comment_path, method: :get, class: "Submit-button" %>
     </div>
-    
-  </body>
+  </div>
+</body>
 </html>

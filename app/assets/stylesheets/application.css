@@ -10,3 +10,832 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Log In */
+
+/* Basic styling for the form container */
+.Log-in-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form header */
+.Log-in-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for form fields and labels */
+.Log-in-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.Log-in-form label {
+  font-weight: bold;
+}
+
+.Log-in-form input[type="email"],
+.Log-in-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Styling for the "Remember Me" checkbox and label */
+.Log-in-form .field.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the submit button */
+.Log-in-form .actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Log-in-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Styling for the links section (if you want) */
+
+/* .Log-in-form .links {
+  text-align: center;
+  margin-top: 20px;
+} */
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .Log-in-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Log-in-form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Edit User Form */
+
+/* Basic styling for the form container */
+.Edit-user-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form header */
+.Edit-user-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for form fields and labels */
+.Edit-user-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.Edit-user-form label {
+  font-weight: bold;
+}
+
+.Edit-user-form input[type="text"],
+.Edit-user-form input[type="email"],
+.Edit-user-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Styling for the submit button */
+.Edit-user-form .actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Edit-user-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .Edit-user-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Edit-user-form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Sign-Up */
+
+/* Basic styling for the form container */
+.Sing-up-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form header */
+.Sing-up-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for form fields and labels */
+.Sing-up-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.Sing-up-form label {
+  font-weight: bold;
+}
+
+.Sing-up-form input[type="text"],
+.Sing-up-form input[type="email"],
+.Sing-up-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Styling for the submit button */
+.Sing-up-form .actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Sing-up-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .Sing-up-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Sing-up-form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Password-form */
+
+/* Basic styling for the form container */
+.Password-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form header */
+.Password-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for form fields and labels */
+.Password-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.Password-form label {
+  font-weight: bold;
+}
+
+.Password-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Styling for the submit button */
+.Password-form .actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Password-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .Password-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Password-form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Confirmations-form */
+
+/* Basic styling for the form container */
+.Confirmatios-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form header */
+.Confirmatios-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for form fields and labels */
+.Confirmatios-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.Confirmatios-form label {
+  font-weight: bold;
+}
+
+.Confirmatios-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Styling for the submit button */
+.Confirmatios-form .actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Confirmatios-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .Confirmatios-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Confirmatios-form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* User-list */
+
+/* Styling for the user list container */
+.Users-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for each user item */
+.User-item {
+  width: 400px;
+  display: flex;
+  gap: 4rem;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.User-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Text color for user names */
+.User-item h4 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Text color for user roles */
+.User-item p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* User-profile */
+.User-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+/* Styling for the user info section */
+.User-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.User-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+
+.User-info div {
+  flex: 1;
+}
+
+.User-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.User-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Styling for the "User not found" message */
+.User-profile p {
+  font-size: 1rem;
+  color: #777;
+  text-align: center;
+}
+
+/* Recent-post */
+
+/* Styling for the recent posts container */
+.Recent-posts {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+/* Styling for each post item */
+.Post-item {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Post-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.Post-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Styling for the "No posts found" message */
+.Recent-posts p {
+  font-size: 1rem;
+  color: #777;
+  text-align: center;
+}
+
+/* User-Profile */
+
+/* Styling for the user bio section */
+.User-bio {
+  margin-top: 20px;
+}
+
+.User-bio h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.User-bio p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Styling for the user actions buttons */
+.User-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.User-actions input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .User-profile {
+    max-width: 100%;
+  }
+}
+
+/* User-details */
+
+/* Styling for the user details section */
+.user-details {
+  width: 60%;
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.user-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.user-details p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Styling for the custom link */
+.custom-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the user posts counter */
+.user-posts-counter {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Post-container */
+
+/* Styling for the page container */
+.Post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+/* Styling for the notice section */
+.Notice {
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .Post-container {
+    max-width: 100%;
+  }
+}
+
+/* Post-section */
+
+/* Styling for the posts section container */
+.Posts-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+/* Styling for the comments section */
+.text p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Styling for the comments section */
+.Comments-section {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.Post-item .Comments-section {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.Comments-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.Post-item .Comments-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.Post-info p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.Post-item .Comments-section p {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Index-Post-Section */
+
+/* Styling for the post section container */
+.Post-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the post details container */
+.Post-details {
+  margin-bottom: 20px;
+}
+
+/* Styling for the post info */
+.Post-info {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Styling for the post text */
+.Post-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Text-section */
+
+/* Styling for the text section */
+.text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.like-counter {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.like-counter-number {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Styling for the comments section */
+.comments-section {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.section-comments {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.ul-comments-box {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ul-comments-box li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.ul-comments-box li::before {
+  content: "•"; /* Bullet point style */
+  padding-right: 5px;
+}
+
+/* User-Post-section */
+
+/* Styling for the page container */
+.Page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling for the alert section */
+.Alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #dc3545;
+}
+
+.Comments-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Comments-section li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.Comments-section li::before {
+  content: "•"; /* Bullet point style */
+  padding-right: 5px;
+}
+
+/* New Post Section */
+.New-post-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.New-post-form h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Styling for form fields */
+.Form-field {
+  margin-bottom: 20px;
+}
+
+.Form-field label {
+  display: block;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.Form-input,
+.Form-textarea {
+  width: 96%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.Form-textarea {
+  resize: vertical;
+}
+
+/* Styling for the submit button */
+.Submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Styling for the go back button */
+.Go-back-button {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* New Comment Section */
+.New-comment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.New-comment-form h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
