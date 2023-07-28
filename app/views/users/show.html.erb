@@ -7,11 +7,16 @@
     <% if @user %>
       <%= render 'shared/user_card', user: @user %>
 
-      <div class="User-bio">
-        <h2>Bio</h2>
+    <div class="User-bio">
+      <h2>Bio</h2>
+      <% if @user.bio.present? %>
         <p><%= h(@user.bio) %></p>
-      </div>
-    <% else %>
+      <% else %>
+        <p>Bio not found</p>
+      <% end %>
+    </div>
+
+      <% else %>
       <p>User not found.</p>
     <% end %>
 
