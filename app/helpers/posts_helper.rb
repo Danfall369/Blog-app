@@ -17,9 +17,13 @@ module PostsHelper
           content_tag(:p, 'no comments for the moment', class: 'ul-comments-box')
         else
           content_tag(:ul, class: 'ul-comments-box') do
-            post.comments.each do |comment| # Loop through each comment associated with the post
-              user_name = comment.user ? comment.user.name : 'Anonymous' # Get the name of the user who made the comment
-              concat content_tag(:li, "#{user_name}: #{comment.text}")
+            post.comments.each do |comment|
+              user_name = comment.user ? comment.user.name : 'Anonymous'
+              comment_text = "#{user_name}: #{comment.text}"
+              delete_link = button_to('Delete', delete_comment_path(comment.user, post, comment),
+                                      method: :delete, class: "Delete-button")
+
+              concat content_tag(:li, "#{comment_text} #{delete_link}".html_safe, class: 'comment-li')
             end
           end
         end

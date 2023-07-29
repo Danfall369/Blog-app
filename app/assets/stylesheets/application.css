@@ -429,9 +429,22 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.Post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .Post-item h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #007bff;
+}
+
+.Post-title,
+.Post-title:visited,
+.Post-title:hover {
+  text-decoration: none;
   color: #007bff;
 }
 
@@ -680,7 +693,6 @@ body {
 }
 
 .ul-comments-box li::before {
-  content: "•"; /* Bullet point style */
   padding-right: 5px;
 }
 
@@ -703,9 +715,14 @@ body {
 }
 
 .Comments-section ul {
-  list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.comment-li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .Comments-section li {
@@ -772,6 +789,17 @@ body {
   border-radius: 3px;
   cursor: pointer;
   font-size: 1rem;
+  text-decoration: none;
+}
+
+.Delete-button {
+  padding: 5px 5px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* Styling for the go back button */
