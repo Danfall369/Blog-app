@@ -17,7 +17,7 @@ class PostsController < ApplicationController
     @post = User.find(params[:user_id]).posts.build(post_params)
     return unless @post.save
 
-    redirect_to user_posts_path
+    redirect_to user_posts_path, notice: 'Post Created'
   end
 
   def destroy
