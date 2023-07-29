@@ -106,7 +106,13 @@ This is only the Back-End part of the project, so It doesn't need any deploy
 
 ## 👥 Authors <a name="author"></a>
 
-👤 Daniel Falcon - [Github](https://github.com/Danfall369) | [Linkedin](https://www.linkedin.com/in/danfall369/)
+👤 **Daniel Falcon** 
+- GitHub: [Github](https://github.com/Danfall369) |
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/danfall369/)
+
+👤 **Alejandro Velasquez** 
+- Github: [Github](https://github.com/VelzckC0D3) 
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/velzckcode/)
 
 <!-- FEATURES -->
 
