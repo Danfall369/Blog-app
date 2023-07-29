@@ -4,7 +4,9 @@
       <div class="Post-item">
         <div class="Post-actions">
           <h3><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id), class: "Post-title" %></h3>
-          <%= link_to 'Delete', delete_post_path(user_id: post.author_id, id: post.id), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: "Delete-button" %>
+          <% if current_user == post.user || current_user.admin %>
+            <%= link_to 'Delete', delete_post_path(user_id: post.author_id, id: post.id), data: { turbo_method: :delete, turbo_confirm: 'Delete Post?' }, class: "Delete-button" %>
+          <% end %>
         </div>
         <p><%= post.text %></p>
         <p>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
