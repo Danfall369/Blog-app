@@ -21,7 +21,7 @@ module PostsHelper
               user_name = comment.user ? comment.user.name : 'Anonymous'
               comment_text = "#{user_name}: #{comment.text}"
               delete_link = button_to('Delete', delete_comment_path(comment.user, post, comment),
-                                      method: :delete, class: "Delete-button")
+                                      method: :delete, class: 'Delete-button')
 
               concat content_tag(:li, "#{comment_text} #{delete_link}".html_safe, class: 'comment-li')
             end
