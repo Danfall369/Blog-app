@@ -5,18 +5,18 @@
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field" >
-        <%= f.label :photo %><br />
-        <%= f.text_field :photo, autofocus: true %>
+        <br />
+        <%= f.text_field :photo, autofocus: true, placeholder: "Photo" %>
     </div>
 
     <div class="field" >
-        <%= f.label :name %><br />
-        <%= f.text_field :name, autofocus: true %>
+        <br />
+        <%= f.text_field :name, autofocus: true, placeholder: "Full Name" %>
     </div>
 
     <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "E-mail" %>
     </div>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -24,27 +24,28 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-      <%= f.password_field :password, autocomplete: "new-password" %>
+      <br />
+      <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password" %>
+      <i>(leave blank if you don't want to change it)</i>
       <% if @minimum_password_length %>
-        <br />
         <em><%= @minimum_password_length %> characters minimum</em>
       <% end %>
     </div>
 
     <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      <br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation" %>
     </div>
 
     <div class="field">
-      <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-      <%= f.password_field :current_password, autocomplete: "current-password" %>
+      <br />
+      <%= f.password_field :current_password, autocomplete: "current-password", placeholder: "Current Password" %>
+      <i>(we need your current password to confirm your changes)</i>
     </div>
 
       <div class="field" >
-        <%= f.label :bio %><br />
-        <%= f.text_field :bio, autofocus: true %>
+        <br />
+        <%= f.text_field :bio, autofocus: true, placeholder: "Bio" %>
     </div>
 
     <div class="actions">
@@ -54,10 +55,15 @@
 </div>
 
 <div class="Links">
+
   <h3>Cancel my account</h3>
 
-  <div>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class: "Submit-button" %></div>
+  <p>Unhappy?</p>
+  
+  <div class="User-actions">
+    <%= button_to "G Back", :back, method: :get, class:"Go-back-button" %>
+    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class: "Submit-button" %>
+  </div>
 
-  <%= button_to "Back", :back, method: :get, class:"Go-back-button" %>
 </div>
 

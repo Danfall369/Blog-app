@@ -2,7 +2,7 @@
   <% if @user.recent_posts.any? %>
     <% @user.recent_posts.each do |post| %>
       <div class="Post-item">
-        <h3><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id) %></h3>
+        <h3><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id), class: "Post-title" %></h3>
         <p><%= h(post.text) %></p>
         <p>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
       </div>  
