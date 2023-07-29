@@ -20,7 +20,7 @@ module PostsHelper
             post.comments.each do |comment|
               user_name = comment.user ? comment.user.name : 'Anonymous'
               comment_text = "#{user_name}: #{comment.text}"
-              delete_link = if current_user == post.user && can?(:delete, comment)
+              delete_link = if current_user == post.user || can?(:delete, comment)
                               button_to('Delete', delete_comment_path(comment.user, post, comment),
                                         method: :delete,
                                         data: { turbo_method: :delete, turbo_confirm: 'Delete Comment?' },
