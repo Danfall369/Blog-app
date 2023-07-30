@@ -4,10 +4,10 @@ class Ability
   def initialize(user)
     user || User.new
 
-    if user.admin?
-      can :manage, :all
-    else
-      can :read, :all
-    end
+    can :manage, :all if user.role == 'admin'
+
+    return unless user.role == 'user'
+
+    can :read, :all
   end
 end

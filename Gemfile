@@ -78,5 +78,7 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'active_model_serializers'
 gem 'cancancan'
 gem 'devise', '~> 4.9'
+gem 'jwt'
